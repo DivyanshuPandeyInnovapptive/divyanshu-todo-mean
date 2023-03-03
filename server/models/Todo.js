@@ -5,11 +5,11 @@ const todoSchema = new mongoose.Schema({
     type: String,
     trim: true,
     required: [true, "A todo name must be provided"],
-    maxlength: [50, "Todo must be at max 200 characters"],
+    maxlength: [200, "Todo must be at max 200 characters"],
   },
   day: {
     type: String,
-    reuired: [true, "A todo must have day and time"],
+    required: [true, "A todo must have day and time"],
   },
   reminder: {
     type: Boolean,
